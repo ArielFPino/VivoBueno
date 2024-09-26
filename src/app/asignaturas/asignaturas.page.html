@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis Asignaturas</ion-title>
+    <ion-buttons slot="end">  <!-- Alineado a la derecha -->
+      <img src="assets/img/duocuc-logo.png" alt="Logo Duoc UC" style="height: 40px;">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="page">
+  <div class="card-container">
+    <ion-card *ngFor="let asignatura of asignaturas">
+      <ion-card-header>
+        <ion-card-title>{{ asignatura.nombre }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button shape="round" color="primary" expand="full" (click)="viewSubject(asignatura)">
+          Detalles
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

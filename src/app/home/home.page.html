@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="">
+    <ion-title>Login</ion-title>
+    <ion-buttons slot="end">
+      <img src="assets/img/duocuc-logo.png" alt="Logo Duoc UC" style="height: 40px;">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding content-center">
+  <div class="form-container">
+    <h1>Inicio de Sesión</h1>
+
+    <!-- Input de Correo -->
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input
+        type="email"
+        [(ngModel)]="correo"
+        placeholder="Ingrese su correo"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <!-- Input de Clave -->
+    <ion-item>
+      <ion-label position="floating">Clave</ion-label>
+      <ion-input
+        type="password"
+        [(ngModel)]="clave"
+        placeholder="Ingrese su clave"
+        required
+      ></ion-input>
+    </ion-item>
+
+    <!-- Botón de Inicio de Sesión -->
+    <ion-button expand="full" (click)="menu()">Iniciar Sesión</ion-button>
+
+    <!-- Enlace para recuperar clave -->
+    <p class="forgot-password">
+      <a href="#" (click)="recuperarClave()">¿Has olvidado tu clave?</a>
+    </p>
+  </div>
+</ion-content>
+

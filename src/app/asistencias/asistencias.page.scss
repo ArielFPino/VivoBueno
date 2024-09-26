@@ -1,0 +1,33 @@
+ion-list {
+  margin: 0 auto; /* Centra la lista */
+  max-width: 600px; /* Limita el ancho máximo de la lista */
+}
+
+.month-item {
+  background-color: #f3c53b; /* Amarillo Duoc UC */
+  color: #ffffff; /* Azul Marino Duoc UC */
+  text-align: center; /* Centra el texto */
+  margin: 10px 0; /* Espacio entre elementos */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno para mejor visualización */
+}
+
+.asistencia-item {
+  background-color: #eaeaea; /* Color de fondo claro */
+  margin: 5px 0; /* Espacio entre elementos de asistencia */
+  border-radius: 8px; /* Bordes redondeados */
+  
+  ion-label {
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espacio interno para mejorar la visualización */
+  }
+
+  /* Colores para el estado */
+  .presente {
+    color: green; /* Color verde para presente */
+  }
+
+  .ausente {
+    color: red; /* Color rojo para ausente */
+  }
+}

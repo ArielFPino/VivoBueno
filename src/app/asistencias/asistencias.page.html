@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Asistencias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <!-- Mes de Agosto -->
+    <ion-item detail="true" (click)="toggleMonth('agosto')" class="month-item">
+      <ion-label>Agosto</ion-label>
+      <ion-icon [name]="expandedMonths['agosto'] ? 'chevron-up' : 'chevron-down'" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item *ngIf="expandedMonths['agosto']">
+      <ion-list>
+        <ion-item *ngFor="let asistencia of asistenciasAgosto" class="asistencia-item">
+          <ion-label>
+            <h2>{{ asistencia.asignatura }}</h2>
+            <p>Fecha: {{ asistencia.fecha }}</p>
+            <p>
+              Estado:
+              <span [ngClass]="asistencia.presente ? 'presente' : 'ausente'">
+                {{ asistencia.presente ? 'Presente' : 'Ausente' }}
+              </span>
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+
+    <!-- Mes de Septiembre -->
+    <ion-item detail="true" (click)="toggleMonth('septiembre')" class="month-item">
+      <ion-label>Septiembre</ion-label>
+      <ion-icon [name]="expandedMonths['septiembre'] ? 'chevron-up' : 'chevron-down'" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item *ngIf="expandedMonths['septiembre']">
+      <ion-list>
+        <ion-item *ngFor="let asistencia of asistenciasSeptiembre" class="asistencia-item">
+          <ion-label>
+            <h2>{{ asistencia.asignatura }}</h2>
+            <p>Fecha: {{ asistencia.fecha }}</p>
+            <p>
+              Estado:
+              <span [ngClass]="asistencia.presente ? 'presente' : 'ausente'">
+                {{ asistencia.presente ? 'Presente' : 'Ausente' }}
+              </span>
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">  <!-- Botón de logout en el extremo izquierdo -->
+      <ion-button (click)="logout()" color="secondary">
+        <ion-icon name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-title>Menú Principal</ion-title>
+    
+    <ion-buttons slot="end">  <!-- Logo de Duoc UC en el extremo derecho -->
+      <img src="assets/img/duocuc-logo.png" alt="Logo Duoc UC" style="height: 40px;">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="welcome-message">
+    <h2>Bienvenido, Usuario 1</h2>
+    <p>Esperamos que tengas un excelente día.</p>
+  </div>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Gestión</ion-label>
+    </ion-list-header>
+
+    <ion-item button (click)="Asignaturas()">
+      <ion-icon name="book-outline" slot="start"></ion-icon>
+      <ion-label>Mis Asignaturas</ion-label>
+    </ion-item>
+
+    <ion-item button (click)="asistencia()">
+      <ion-icon name="calendar-outline" slot="start"></ion-icon>
+      <ion-label>Mis Asistencias</ion-label>
+    </ion-item>
+
+    <ion-item button (click)="registro()">
+      <ion-icon name="clipboard-outline" slot="start"></ion-icon>
+      <ion-label>Registro de asistencia</ion-label>
+    </ion-item>
+
+    <ion-item button (click)="cambiar()">
+      <ion-icon name="key-outline" slot="start"></ion-icon>
+      <ion-label>Cambiar Clave</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

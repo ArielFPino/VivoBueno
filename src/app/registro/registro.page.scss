@@ -1,0 +1,13 @@
+.image-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    height: 100%; /* Para centrar verticalmente */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Para darle bordes redondeados a la imagen */
+  }
+  

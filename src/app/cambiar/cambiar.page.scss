@@ -1,0 +1,24 @@
+.form-container {
+  max-width: 400px; /* Limita el ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 20px; /* Añade un poco de espacio interno */
+}
+
+h2 {
+  text-align: center; /* Centra el texto del encabezado */
+  color: #003f87; /* Azul Marino Duoc UC */
+  margin-bottom: 20px; /* Añade espacio debajo del título */
+}
+
+ion-item {
+  margin-bottom: 15px; /* Aumenta el margen inferior para más separación */
+}
+
+ion-input {
+  --padding-top: 12px; /* Ajusta el padding superior */
+  --padding-bottom: 12px; /* Ajusta el padding inferior */
+}
+
+ion-button {
+  margin-top: 20px; /* Espacio adicional entre el botón y los inputs */
+}

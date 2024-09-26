@@ -1,0 +1,29 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+// Colores base de la app
+:root {
+    --ion-color-primary: #FFCC00; /* Amarillo Duoc UC */
+    --ion-color-primary-rgb: 255, 204, 0;
+    --ion-color-primary-contrast: #003B5C; /* Azul Marino para el contraste */
+    --ion-color-primary-contrast-rgb: 0, 59, 92;
+    --ion-color-primary-shade: #e6b800; /* Sombra del amarillo */
+    --ion-color-primary-tint: #ffd633; /* Tono más claro del amarillo */
+  
+    --ion-color-secondary: #003B5C; /* Azul Marino Duoc UC */
+    --ion-color-secondary-rgb: 0, 59, 92;
+    --ion-color-secondary-contrast: #FFFFFF; /* Blanco para contrastar */
+    --ion-color-secondary-contrast-rgb: 255, 255, 255;
+    --ion-color-secondary-shade: #00304a; /* Sombra del azul */
+    --ion-color-secondary-tint: #335d73; /* Tono más claro del azul */
+  
+    --ion-color-tertiary: #666666; /* Gris Duoc UC */
+    --ion-color-tertiary-rgb: 102, 102, 102;
+    --ion-color-tertiary-contrast: #FFFFFF; /* Blanco para contraste */
+    --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+    --ion-color-tertiary-shade: #555555;
+    --ion-color-tertiary-tint: #7a7a7a;
+  
+    --ion-background-color: #FFFFFF; /* Fondo blanco */
+    --ion-text-color: #003B5C; /* Azul Marino para el texto */
+  }
+  
