@@ -1,23 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">  <!-- Botón de logout en el extremo izquierdo -->
+    <ion-buttons slot="start">
       <ion-button (click)="logout()" color="secondary">
         <ion-icon name="log-out-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-    
     <ion-title>Menú Principal</ion-title>
-    
-    <ion-buttons slot="end">  <!-- Logo de Duoc UC en el extremo derecho -->
+    <ion-buttons slot="end">
       <img src="assets/img/duocuc-logo.png" alt="Logo Duoc UC" style="height: 40px;">
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-
-
 <ion-content [fullscreen]="true" class="ion-padding">
-  <div class="welcome-message">
+  <div class="welcome-message" style="text-align: center; margin-bottom: 20px;">
     <h2>Bienvenido, Usuario 1</h2>
     <p>Esperamos que tengas un excelente día.</p>
   </div>
@@ -27,22 +23,22 @@
       <ion-label>Gestión</ion-label>
     </ion-list-header>
 
-    <ion-item button (click)="Asignaturas()">
+    <ion-item button (click)="Asignaturas()" style="margin-bottom: 15px;">
       <ion-icon name="book-outline" slot="start"></ion-icon>
-      <ion-label>Mis Asignaturas</ion-label>
+      <ion-label>Asignaturas</ion-label>
     </ion-item>
 
-    <ion-item button (click)="asistencia()">
+    <ion-item button (click)="asistencia()" style="margin-bottom: 15px;">
       <ion-icon name="calendar-outline" slot="start"></ion-icon>
-      <ion-label>Mis Asistencias</ion-label>
+      <ion-label>Asistencias</ion-label>
     </ion-item>
 
-    <ion-item button (click)="registro()">
+    <ion-item button (click)="registro()" style="margin-bottom: 15px;">
       <ion-icon name="clipboard-outline" slot="start"></ion-icon>
       <ion-label>Registro de asistencia</ion-label>
     </ion-item>
 
-    <ion-item button (click)="cambiar()">
+    <ion-item button (click)="cambiar()" style="margin-bottom: 15px;">
       <ion-icon name="key-outline" slot="start"></ion-icon>
       <ion-label>Cambiar Clave</ion-label>
     </ion-item>
